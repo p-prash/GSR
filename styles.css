@@ -10,6 +10,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: myLinks;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: myHeader;
+    color: black;
+    font-weight: 300;
 }
 
 .header {
@@ -18,7 +26,7 @@ body{
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(lightgrey, white);
+    background-image: linear-gradient(aliceblue, white);
     align-items: center;
 }
 
@@ -63,7 +71,7 @@ ul {
   }
   
   ul li ul {
-    background: white;
+    background-image: linear-gradient(white, aliceblue);
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
@@ -104,10 +112,6 @@ a:hover {
 }
 
 .title {
-    font-size: 24px;
-    font-family: myHeader;
-    color: black;
-    font-weight: 300;
     margin-left: 4px;
     margin-right: 60px;
     display: flex;
@@ -118,5 +122,28 @@ a:hover {
 .widget-container {
     display: flex;
     flex-wrap: wrap;
+    flex: auto;
     justify-content: space-around;
+}
+
+.roster-container,
+.quick-booking-container,
+.shift-matches-container,
+.compliance-insights-container,
+.upcoming-bookings-container {
+    background-color: aliceblue;
+    height: 640px;
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    width: 500px;
+    padding: 16px 32px;
+    margin: 16px;
+}
+
+.roster-container,
+.shift-matches-container,
+.compliance-insights-container,
+.quick-booking-container {
+    height: 220px;
 }
