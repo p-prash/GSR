@@ -23,7 +23,6 @@ h1 {
 .header {
     padding: 10px 30px;
     margin: 0;
-    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(aliceblue, white);
@@ -95,6 +94,7 @@ ul {
     clear: both;
     width: 100%;
   }
+
 .user-settings {
     display: flex;
     align-items: center;
@@ -120,10 +120,10 @@ a:hover {
 }
 
 .widget-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex: auto;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
 }
 
 .roster-container,
@@ -131,19 +131,35 @@ a:hover {
 .shift-matches-container,
 .compliance-insights-container,
 .upcoming-bookings-container {
-    background-color: aliceblue;
-    height: 640px;
-    border: 1px solid #eee;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-    border-radius: 4px;
-    width: 500px;
-    padding: 16px 32px;
-    margin: 16px;
+  background-color: aliceblue;
+  height: 520px;
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+  width: 500px;
+  padding: 16px 32px;
+  margin: 48px 0px;
 }
 
 .roster-container,
 .shift-matches-container,
 .compliance-insights-container,
 .quick-booking-container {
-    height: 220px;
+  height: 220px;
+}
+
+.booking {
+  background-color: white;
+  width: 474px;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.compiled-bookings {
+  height: 380px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
