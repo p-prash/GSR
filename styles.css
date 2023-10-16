@@ -1,0 +1,54 @@
+@font-face {
+    font-family: myHeader;
+    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+
+    font-family: myLinks;
+    src: url(Roboto-Light.ttf);
+}
+
+body{
+    margin-top: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 0px 8px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(lightgrey, white);
+}
+
+.top-links {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+    margin: 0;
+    margin-right: 8px;
+    padding: 0;
+    align-items: center;
+    font-family: myLinks;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+.title {
+    font-size: 42px;
+    font-family: myHeader;
+    color: black;
+    font-weight: 300;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
