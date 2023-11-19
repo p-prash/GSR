@@ -25,7 +25,7 @@ h1 {
     margin: 0;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(aliceblue, white);
+    background-image: linear-gradient(rgb(236, 244, 252), white);
     align-items: center;
 }
 
