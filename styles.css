@@ -37,12 +37,13 @@ h1 {
 .top-links {
     list-style: none;
     display: flex;
-    gap: 100px;
+    gap: 48px;
     margin: 0;
     padding: 0;
     align-items: center;
     font-size: 15px;
     color: black;
+    margin-left: 128px; 
 }
 
 ul {
@@ -117,6 +118,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 18px;
+    font-size: 26px;
 }
 
 .widget-container {
@@ -131,33 +133,75 @@ a:hover {
 .shift-matches-container,
 .compliance-insights-container,
 .upcoming-bookings-container {
-  background-color: aliceblue;
-  height: 520px;
+  background-color: rgb(236, 244, 252);
+  height: 680px;
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   border-radius: 4px;
   width: 500px;
   padding: 16px 32px;
   margin: 48px 0px;
+  margin-top: 10px;
 }
 
 .roster-container,
 .shift-matches-container,
 .compliance-insights-container,
 .quick-booking-container {
-  height: 220px;
+  height: 298px;
 }
 
 .booking {
-  background-color: white;
-  width: 474px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 2px 4px 16px rgba(0,0,0,.1);
+  border: 1px solid #cccaca;
+  width: 470px;
+  height: 30px;
   border-radius: 10px;
   padding: 16px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .compiled-bookings {
-  height: 380px;
+  height: 580px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expired-comp,
+.thirty-days-comp,
+.sixty-days-comp,
+.shift {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 2px 4px 16px rgba(0,0,0,.1);
+  border: 1px solid #cccaca;
+  width: 470px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expired-comp {
+  background-color: rgb(252, 208, 192);
+}
+
+.thirty-days-comp {
+  background-color: rgb(255, 248, 209);
+}
+
+.sixty-days-comp {
+  background-color: rgb(199, 253, 215);
+}
+
+.compiled-compliance {
+  height: 200px;
   margin-top: 32px;
   display: flex;
   flex-direction: column;
